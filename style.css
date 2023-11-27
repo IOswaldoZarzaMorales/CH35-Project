@@ -1,0 +1,391 @@
+/* Estilos generales */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Estilo barra de navegacion */
+
+.icono-page {
+    width: 40px;
+    height: 40px;
+}
+
+/* En esta seccion tube problemas ya que no se vuelve sticky mi barra de navegacion :( */
+.navbar {
+    background-color: rgba(19, 118, 72, 0.8);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: auto; 
+}
+
+li{
+    padding: 0px 10px;
+}
+
+
+nav span{
+    color: black;
+}
+
+nav a:hover {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+/* Estilos para main */
+
+h1 {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+main p {
+    padding: 10px;
+    color: rgb(19, 118, 72)
+}
+
+/* Estilos para la galeria */
+
+.galeria {
+    height: auto ;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 300px);
+    padding: 20px;
+    grid-gap:20px;
+    /* background-color: gray; */
+}
+
+.item {
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+.item1 {
+    background-image: url(./images/galeria-home1.jpeg);
+}
+
+.item2 {
+    background-image: url(./images/grids-2.jpeg);
+}
+
+.item3 {
+    background-image: url(./images/galeria-home4.jpeg);
+}
+
+.item4 {
+    background-image: url(./images/galeria-home5.jpeg);
+}
+
+.item:hover {
+    transform: scale(0.9);
+    transition: all 2s; 
+    border-radius: 10px;
+    border: none;
+}
+
+/* estilos-quiero-saber-mas */
+
+.quiero-saber {
+    background-color:rgb(19, 118, 72);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.quiero-saber a {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.quiero-saber a:hover {
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/* estilos-seccion-2 */
+
+.seccion-2{
+    padding: 20px;
+}
+
+.seccion-2 h2{
+    font-size: 40px;
+}
+
+/* estilos-boton-de-temporada */
+
+.temporada-home {
+    background-color:rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.temporada-home a {
+    color: white;
+    background-color: #FF9900;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.temporada-home a:hover {
+    background-color:#ffffff;
+    color: #FF9900;
+    border: 1px solid black;
+}
+
+/* estilos-footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color:rgb(19, 118, 72);
+    padding: 10px;
+}
+
+footer a{
+    color: white;
+}
+
+.redes a{
+    color: black;
+    font-size: 20px;
+}
+
+footer p{
+    text-align: center;
+    justify-content: center;
+}
+
+/* Inico estilos de galeria-galeria */
+.galeria-galeria {
+    height: auto;
+    background-color: rgb(52, 114, 50);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(13, 300px);
+    grid-template-areas: 
+    "fotos1"
+    "fotos1"
+    "fotos2"
+    "fotos2"
+    "fotos3"
+    "fotos3"
+    "fotos4"
+    "fotos4"
+    "fotos5"
+    "fotos6"
+    "fotos7"
+    "fotos8"
+    "fotos9";
+    padding: 20px;
+    grid-gap: 40px;
+}
+
+.fotos {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.fotos:hover {
+    transform: scale(0.8);
+    transition: all 2s; 
+    border-radius: 10px;
+    border: none;
+}
+
+.fotos1 {
+    grid-area: fotos1;
+    background-color: aquamarine;
+    background-image: url(images/galeria-galeria1.jpeg);
+}
+
+.fotos2 {
+    grid-area: fotos2;
+    background-color: aquamarine;
+    background-image: url(images/galeria-galeria2.jpeg);
+}
+
+.fotos3 {
+    grid-area: fotos3;
+    background-color: aquamarine;
+    background-image: url(images/galeria-galeria3.jpeg);
+}
+
+.fotos4 {
+    grid-area: fotos4;
+    background-color: aquamarine;
+    background-image: url(images/galeria-galeria4.jpeg);
+}
+
+.fotos5 {
+    grid-area: fotos5;
+    background-color: aquamarine;
+    background-image: url(images/galeria-galeria5.jpeg);
+}
+
+.fotos6 {
+    grid-area: fotos6;
+    background-color: aquamarine;
+    background-image: url(images/galeria-galeria6.jpeg);
+}
+
+.fotos7 {
+    grid-area: fotos7;
+    background-color: aquamarine;
+    background-image: url(images/galeria-galeria7.jpeg);
+}
+
+.fotos8 {
+    grid-area: fotos8;
+    background-color: aquamarine;
+    background-image: url(images/galeria-galeria8.jpeg);
+}
+
+.fotos9 {
+    grid-area: fotos9;
+    background-color: aquamarine;
+    background-image: url(images/galeria-galeria9.jpeg);
+}
+
+.fotos10 {
+    display: none;
+    grid-area: fotos10;
+    background-color: aquamarine;
+    background-image: url(images/galeria-galeria10.jpeg);
+}
+
+.fotos11 {
+    display: none;
+    grid-area: fotos11;
+    background-color: aquamarine;
+    background-image: url(images/galeria-galeria15.jpeg);
+}
+
+/* Fin estilos de galeria-galeria */
+
+/* Inicio de mediaqueris */
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    
+    footer{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 300px);
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    p{
+        font-size: 30px;
+    }
+
+    a{
+        font-size: 18px;
+    }
+
+/* Mediaqueris de galeria */
+.galeria-galeria {
+    height: auto;
+    background-color: rgb(52, 114, 50);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 300px);
+    grid-template-areas: 
+    "fotos1 fotos5 fotos5 "
+    "fotos1 fotos5 fotos5"
+    "fotos6 fotos6 fotos7"
+    "fotos2 fotos8 fotos8"
+    "fotos2 fotos3 fotos4"
+    "fotos9 fotos3 fotos4";
+    padding: 20px;
+    grid-gap: 40px;
+}
+}
+
+@media only screen and (min-width: 993px) {
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 400px);
+        padding: auto;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p{
+        font-size: 40px;
+    }
+
+    a{
+        font-size: 30px;
+    }
+
+    .redes a{
+        font-size: 30px;
+    }
+
+    /* Mediaqueris de galeria */
+.galeria-galeria {
+    height: 100vh;
+    /* width: 100vh; */
+    background-color: rgb(52, 114, 50);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 3fr);
+    grid-template-areas: 
+    "fotos1 fotos5 fotos5 fotos2 fotos3 fotos6 fotos6"
+    "fotos1 fotos5 fotos5 fotos2 fotos3 fotos11 fotos4"
+    "fotos7 fotos7 fotos8 fotos9 fotos10 fotos11 fotos4";
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.fotos10 {
+    display: block;
+    grid-area: fotos10;
+    background-color: aquamarine;
+    background-image: url(images/galeria-galeria10.jpeg);
+}
+
+.fotos11 {
+    display: block;
+    grid-area: fotos11;
+    background-color: aquamarine;
+    background-image: url(images/galeria-galeria15.jpeg);
+}
+
+
+
+}
